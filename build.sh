@@ -18,7 +18,7 @@ sudo apt -y install ibus-bamboo spotify-client anydesk
 ibus restart
 env DCONF_PROFILE=ibus dconf write /desktop/ibus/general/preload-engines "['BambooUs', 'Bamboo']" && gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus', 'Bamboo')]"
 # VS code 
-wget -O ~/Downloads/app.vscode.deb  "https://www.dropbox.com/s/q9xigfdiryqjbav/code_1.59.0-1628120042_amd64.deb?dl=1"
+wget -O~/Downloads/app.vscode.deb https://code.visualstudio.com/sha/download\?build\=stable\&os\=linux-deb-x64
 wget -O ~/Downloads/app.edge.deb  https://go.microsoft.com/fwlink/\?linkid\=2124602
 sudo dpkg -i ~/Downloads/app.vscode.deb
 sudo dpkg -i ~/Downloads/app.edge.deb
@@ -31,6 +31,9 @@ wget -O ~/Downloads/app.zoom.deb https://zoom.us/client/latest/zoom_amd64.deb
 sudo dpkg -i ~/Downloads/app.zoom.deb 
 rm ~/Downloads/app.zoom.deb
 sudo apt -y  --fix-broken install
+
+# Telegram 
+# wget -O ~/Downloads/tsetup.tar.xz https://telegram.org/dl/desktop/linux
 
 #Wallpaper
 wget -O ~/Pictures/wallpapers.zip https://www.dropbox.com/s/ozqe8unw2en8yeh/Wallpapers.zip?dl=1
